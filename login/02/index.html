@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="function.js"></script>
+    <div class="container_login">
+        <div class="logo_login">
+            <div>
+                <h1 class="logo1">Welcome back to<b> Upro</b></h1> 
+                <div class = "description">
+                <h1 class="description_1"> The #1 software<br> development tool
+                    <br> in USTH using NodeJS</br></h1>
+                <h5 class="description_2"> EACH PRODUCT ON A PLAN:</h5>
+
+                <ul class="list-advance">
+                    <li class ="first">Unlimited for user</li>
+                    <li class ="second">Create a dynamic, user-friendly working environment</li>
+                    <li class ="third">Manage work effectively</li>
+                </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="sign-in-content">
+            <div class="sign-in-form">
+               
+                <p style="font-size: 2rem; text-align:center; color: #6D6D6D;user-select: none;">Sign in to continue</p>
+                <div id="user">
+                    <img src="user.svg" alt="">
+                    <input onclick="reset()" id="user-input" class="user-inpt" type="text" placeholder="Username">
+                </div>
+                <div id="pass">
+                    <img src="key.svg" alt="">
+                    <input onclick="reset()" id="pass-input" class="pass-inpt" type="password" placeholder="Password">
+                    <div class="show-password">
+                        <input class="checkbox-showpassword" type="checkbox" onclick="show()">
+                    </div>
+                </div>
+                <div class="alert-content">
+                    <p id="alert"></p>
+                </div>
+                <div>
+                    <center><button id="btn" onclick="check()" class="sign-in-button">Sign in</button></center>
+                </div>
+                <div class="forgot">
+                    <center><a href="https://www.youtube.com/">Forgot your password?</a></center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
